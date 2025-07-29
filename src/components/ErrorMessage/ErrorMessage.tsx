@@ -1,9 +1,9 @@
 import css from './ErrorMessage.module.css'
 
-function ErrorMessage() {
+function ErrorMessage({message}) {
     return (
         <>
-            <p className={css.text}>There was an error, please try again...</p>
+            <p className={css.text}>There was an error {message}, please try again...</p>
         </>
     )
 }
